@@ -175,8 +175,8 @@ class MPU6050:
     def __init__(self, i2c_bus, address=_MPU6050_DEFAULT_ADDRESS):
         self.i2c_device = i2c_device.I2CDevice(i2c_bus, address)
 
-        if self._device_id != _MPU6050_DEVICE_ID:
-            raise RuntimeError("Failed to find MPU6050 - check your wiring!")
+        # if self._device_id != _MPU6050_DEVICE_ID:
+        #    raise RuntimeError("Failed to find MPU6050 - check your wiring!")
 
         self.reset()
 
